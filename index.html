@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Gazi Mustafa Kemal Atatürk</title>
+    <meta name="description" content="Gazi Mustafa Kemal Atatürk'ün hayatı, sözleri ve mirası." />
+    
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="logo" href="index.html" aria-label="Anasayfa">Atatürk</a>
+        <button class="nav-toggle" aria-expanded="false" aria-label="Menüyü aç/kapat">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+        <nav class="site-nav" aria-label="Ana menü">
+          <ul>
+            <li><a href="index.html" data-nav data-i18n="navHome">Anasayfa</a></li>
+            <li><a href="hayat.html" data-nav data-i18n="navLife">Hayatı</a></li>
+            <li><a href="sozler.html" data-nav data-i18n="navQuotes">Sözleri</a></li>
+            <li><a href="galeri.html" data-nav data-i18n="navGallery">Galeri</a></li>
+            <li><a href="kitaplar.html" data-nav data-i18n="navBooks">Kitaplar</a></li>
+            <li><a href="parti.html" data-nav data-i18n="navParty">Parti</a></li>
+          </ul>
+        </nav>
+        <div class="lang" id="lang">
+          <button id="lang-btn" aria-haspopup="listbox" aria-expanded="false" title="Dil">🌐</button>
+          <div class="lang-list" role="listbox" id="lang-list">
+            <button data-lang="tr" class="current">Türkçe</button>
+            <button data-lang="en">English</button>
+            <button data-lang="de">Deutsch</button>
+            <button data-lang="fr">Français</button>
+            <button data-lang="es">Español</button>
+            <button data-lang="ru">Русский</button>
+            <button data-lang="ar">العربية</button>
+            <button data-lang="fa">فارسی</button>
+            <button data-lang="az">Azərbaycan</button>
+            <button data-lang="zh">中文</button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero banner reveal" id="home">
+        <div class="container hero-inner">
+          <div class="hero-text">
+            <h1 data-i18n="homeTitle">Gazi Mustafa Kemal Atatürk</h1>
+            <p data-i18n="homeSubtitle">Türkiye Cumhuriyeti'nin kurucusu, başöğretmen ve çağdaşlaşmanın öncüsü.</p>
+            <div class="hero-ctas"></div>
+          </div>
+          <div class="hero-media" aria-hidden="true">
+            <!-- Atatürk portresi -->
+            <div class="portrait-placeholder"><img src="photo/pp.jpeg" alt="Mustafa Kemal Atatürk" /></div>
+          </div>
+        </div>
+        <!-- Spotify Playlist Link -->
+        <a href="https://open.spotify.com/playlist/6awBnIw061EYC4OFtLZux6?si=98c88ecd090a422b" 
+           target="_blank" 
+           rel="noopener noreferrer" 
+           class="spotify-link" 
+           aria-label="Atatürk Müzikleri Spotify Playlist'ini Aç">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.42 1.56-.299.421-1.02.599-1.559.3z"/>
+          </svg>
+        </a>
+        
+        <!-- Nutuk Book Link -->
+        <a href="https://archive.org/details/nutukmustafakemalataturkpdfdrive.com/page/n5/mode/2up" 
+           target="_blank" 
+           rel="noopener noreferrer" 
+           class="book-link" 
+           aria-label="Nutuk Kitabını Archive.org'da Aç">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6zm16-4H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-1 9H9V9h10v2zm-4 4H9v-2h6v2zm4-8H9V5h10v2z"/>
+          </svg>
+        </a>
+        
+        <!-- CHP Link -->
+        <a href="https://chp.org.tr/" 
+           target="_blank" 
+           rel="noopener noreferrer" 
+           class="chp-link" 
+           aria-label="Cumhuriyet Halk Partisi Resmi Sitesini Aç">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+            <circle cx="12" cy="12" r="3" fill="none" stroke="currentColor" stroke-width="2"/>
+          </svg>
+        </a>
+      </section>
+
+      
+
+      
+
+      
+
+
+      
+
+      
+
+      <section class="section reveal" id="hitabe">
+        <div class="container">
+          <h2 data-i18n="hitabeTitle">Gençliğe Hitabe</h2>
+          <div class="card" style="padding: 0; overflow: hidden;">
+            <details open>
+              <summary style="list-style:none; padding: 16px; cursor: pointer; border-bottom: 1px solid var(--border); font-weight:700; color: var(--brand);" data-i18n="toggleText">Metni Göster/Gizle</summary>
+              <div style="padding: 16px; max-height: 360px; overflow: auto;">
+                <p data-i18n-html="hitabeHtml">
+Ey Türk gençliği! Birinci vazifen, Türk istiklâlini, Türk Cumhuriyetini, ilelebet, muhafaza ve müdafaa etmektir. Mevcudiyetinin ve istikbalinin yegâne temeli budur. Bu temel, senin en kıymetli hazinendir.<br/>
+İstikbalde dahi, seni bu hazineden mahrum etmek isteyecek, dâhilî ve haricî bedhahların olacaktır. Bir gün, istiklâl ve Cumhuriyeti müdafaa mecburiyetine düşersen, vazifeye atılmak için, içinde bulunacağın vaziyetin imkân ve şeraitini düşünmeyeceksin! Bu imkân ve şerait, çok namüsait bir mahiyette tezahür edebilir. İstikâl ve Cumhuriyete kastedecek düşmanlar, bütün dünyada emsali görülmemiş bir galibiyetin mümessili olabilirler. Cebren ve hile ile aziz vatanın bütün kaleleri zaptedilmiş, bütün tersanelerine girilmiş, bütün orduları dağıtılmış ve memleketin her köşesi bilfiil işgal edilmiş olabilir.<br/>
+Bütün bu şeraitten daha elîm ve daha vahim olmak üzere, memleketin dâhilinde, iktidara sahip olanlar gaflet ve dalâlet ve hattâ hıyanet içinde bulunabilirler. Hattâ bu iktidar sahipleri şahsî menfaatlerini, müstevlilerin siyasî emelleriyle tevhit edebilirler. Millet, fakr u zaruret içinde harap ve bîtap düşmüş olabilir.<br/>
+Ey Türk istikbalinin evlâdı! İşte, bu ahval ve şerait içinde dahi, vazifen; Türk istiklâl ve Cumhuriyetini kurtarmaktır! Muhtaç olduğun kudret, damarlarındaki asil kanda mevcuttur!
+                </p>
+              </div>
+            </details>
+            <div style="display:flex; gap:10px; padding: 12px 16px; border-top: 1px solid var(--border);">
+              <button class="btn" id="hitabe-dinle" data-i18n="listen">Atatürk’ten Dinle</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section alt reveal" id="yil10">
+        <div class="container">
+          <h2 data-i18n="yil10Title">10. Yıl Nutku</h2>
+          <div class="card" style="overflow: hidden;">
+            <div class="yt-wrap" style="padding-top: 0;">
+              <video controls style="width:100%; height:auto; display:block;" src="video/Bir Milleti Baştan Yaratan Nutuk (10. Yıl Nutku).mp4"></video>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section alt reveal" id="sozler">
+        <div class="container">
+          <h2>Atatürk Hakkında Sözler</h2>
+          <div class="grid four">
+            <figure class="card">
+              <blockquote class="quote">“Atatürk, çağımızın en büyük devlet adamlarından biridir. Milletine kazandırdığı moral, hürriyet ve bağımsızlık duygusu bütün insanlığa örnektir.”</blockquote>
+              <figcaption><strong>Franklin D. Roosevelt</strong> – ABD Başkanı</figcaption>
+            </figure>
+            <figure class="card">
+              <blockquote class="quote">“Asker olarak eşsizdi, devlet adamı olaraksa çağının en ilerilerindendi. Türk milletini küllerinden yeniden doğurdu.”</blockquote>
+              <figcaption><strong>Winston Churchill</strong> – İngiltere Başbakanı</figcaption>
+            </figure>
+            <figure class="card">
+              <blockquote class="quote">“Atatürk, yalnız Türkiye’nin değil, bütün Doğu’nun yeniden doğuşunu temsil eder. Komşusu olarak ona hayranım.”</blockquote>
+              <figcaption><strong>Eleftherios Venizelos</strong> – Yunanistan Başbakanı (1934’te Nobel Barış Ödülü’ne aday gösterdi)</figcaption>
+            </figure>
+            <figure class="card">
+              <blockquote class="quote">“Yüzyıllar çok nadir olarak bir dâhi yetiştirir. Ne yazık ki bu yüzyılın dâhisi Türklere nasip oldu.”</blockquote>
+              <figcaption><strong>Lloyd George</strong> – İngiltere Başbakanı (I. Dünya Savaşı dönemi)</figcaption>
+            </figure>
+            <figure class="card">
+              <blockquote class="quote">“Atatürk, ulusunun onurunu kurtaran bir kahraman, insanlığın ilerlemesine yön veren bir devrimcidir.”</blockquote>
+              <figcaption><strong>Charles de Gaulle</strong> – Fransa</figcaption>
+            </figure>
+            <figure class="card">
+              <blockquote class="quote">“Mustafa Kemal, tarihin akışını değiştiren insanlardan biridir. Onun sayesinde Türk ulusu tarihte bir kez daha başrol oynamaya başladı.”</blockquote>
+              <figcaption><strong>Arnold J. Toynbee</strong> – İngiliz tarihçi</figcaption>
+            </figure>
+            <figure class="card">
+              <blockquote class="quote">“Atatürk, modern dünyanın en dikkat çekici önderlerinden biriydi. Onun yaşamı, Orta Çağ karanlığından aydınlığa geçişin öyküsüdür.”</blockquote>
+              <figcaption><strong>Lord Kinross</strong> – İskoç tarihçi</figcaption>
+            </figure>
+            <figure class="card">
+              <blockquote class="quote">“Atatürk, yalnız Türk milletinin değil, tüm özgürlük savaşçıları için bir ilham kaynağı olmuştur.”</blockquote>
+              <figcaption><strong>John F. Kennedy</strong> – ABD Başkanı</figcaption>
+            </figure>
+            <figure class="card">
+              <blockquote class="quote">“Atatürk, Asya’nın uyanışına yol açan ışıklardan biridir. Ulusuna bağımsızlık ruhunu vermekle kalmadı, doğuya cesaret verdi.”</blockquote>
+              <figcaption><strong>Jawaharlal Nehru</strong> – Hindistan Başbakanı</figcaption>
+            </figure>
+            <figure class="card">
+              <blockquote class="quote">“Atatürk, kendi halkını cehaletten kurtaran bir önderdir. Bizim için modeldir; çünkü biz de halkımızı modernleştirmek istiyoruz.”</blockquote>
+              <figcaption><strong>David Ben-Gurion</strong> – İsrail’in ilk Başbakanı</figcaption>
+            </figure>
+            <figure class="card">
+              <blockquote class="quote">“Türk milletinin kaderini eline almış bu adam, bir orduyu değil bir ulusu yönetiyor.”</blockquote>
+              <figcaption><strong>Erich Ludendorff</strong> – Alman General</figcaption>
+            </figure>
+            <figure class="card">
+              <blockquote class="quote">“Atatürk’ün başarısı, yalnız Türkiye’nin değil, bütün insanlığın kazancıdır. O, ulusal bilinç yaratmanın mucizesini başarmıştır.”</blockquote>
+              <figcaption><strong>Herbert Melzig</strong> – Alman tarihçi</figcaption>
+            </figure>
+            <figure class="card">
+              <blockquote class="quote">“Türkiye'nin geleceğine inanıyorum, çünkü başında Atatürk gibi bir deha var.”</blockquote>
+              <figcaption><strong>Pierre Loti</strong> – Fransız yazar</figcaption>
+            </figure>
+            <figure class="card">
+              <blockquote class="quote">“Atatürk, hiçbir dış desteğe dayanmadan bir ulus yarattı. Bu, tarihte nadir görülen bir mucizedir.”</blockquote>
+              <figcaption><strong>Lord Patrick Kinross</strong> – İngiliz tarihçi</figcaption>
+            </figure>
+            <figure class="card">
+              <blockquote class="quote">“Eğer Atatürk Avrupa’da doğsaydı, bütün dünya onun izinden giderdi.”</blockquote>
+              <figcaption><strong>Bernard Shaw</strong> – İrlandalı yazar, Nobel ödüllü</figcaption>
+            </figure>
+            <figure class="card">
+              <blockquote class="quote">“Atatürk, çağının en büyük liderlerinden biridir. Onunla tanışmak hayatımın en unutulmaz anlarından biriydi.”</blockquote>
+              <figcaption><strong>Douglas MacArthur</strong> – ABD Generali</figcaption>
+            </figure>
+            <figure class="card">
+              <blockquote class="quote">“Atatürk, mazlum milletlerin umududur. Sömürgeciliğe karşı baş kaldırının sembolüdür.”</blockquote>
+              <figcaption><strong>Gerard Tongas</strong> – Fransız yazar ve diplomat</figcaption>
+            </figure>
+            <figure class="card">
+              <blockquote class="quote">“Karşımda, yenilmemiş bir milletin temsilcisi vardı. Mustafa Kemal, masadaki bütün denklemleri değiştirdi.”</blockquote>
+              <figcaption><strong>Lord Curzon</strong> – İngiliz Dışişleri Bakanı (Lozan)</figcaption>
+            </figure>
+            <figure class="card">
+              <blockquote class="quote">“Atatürk, hem sert hem merhametli bir liderdi. En zor kararlarda bile milletinin iyiliğini düşündü.”</blockquote>
+              <figcaption><strong>Sir Percy Loraine</strong> – İngiliz Büyükelçisi (Ankara)</figcaption>
+            </figure>
+            <figure class="card">
+              <blockquote class="quote">“Atatürk, insan zekâsının ve özgür düşüncenin zaferini temsil eder. Onun eğitim reformları, bilimin önünü açmıştır.”</blockquote>
+              <figcaption><strong>Albert Einstein</strong> – Fizikçi</figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div id="footer-flags" class="section" style="padding-top:12px; padding-bottom:16px;"></div>
+        <p>© <span id="year"></span> <span data-i18n="footerSite">Atatürk Anma Sitesi</span></p>
+        <p class="credit" data-i18n="footerDesigned">Yiğit KURT tarafından tasarlandı</p>
+      </div>
+    </footer>
+
+    <!-- Modal: Atatürk'ten Dinle -->
+    <div class="modal" id="dinle-modal" aria-hidden="true" role="dialog" aria-label="Atatürk'ten Dinle">
+      <div class="box">
+        <div class="header">
+          <h3>Atatürk’ten Dinle</h3>
+          <button class="close" id="dinle-close" aria-label="Kapat">×</button>
+        </div>
+        <div class="content">
+          <!-- Yerel videon varsa bu yolu güncelle -->
+          <video id="dinle-video" controls src="video/Atatürkten Gençliğe Hitabesi (AI).mp4"></video>
+        </div>
+      </div>
+    </div>
+
+    <script src="main.js" defer></script>
+  </body>
+  </html>
+
+

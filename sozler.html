@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Atatürk'ün Sözleri</title>
+    <meta name="description" content="Gazi Mustafa Kemal Atatürk'ün özlü sözleri ve vecizeleri." />
+    
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="logo" href="index.html" aria-label="Anasayfa">Atatürk</a>
+        <button class="nav-toggle" aria-expanded="false" aria-label="Menüyü aç/kapat">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+        <nav class="site-nav" aria-label="Ana menü">
+          <ul>
+            <li><a href="index.html" data-nav data-i18n="navHome">Anasayfa</a></li>
+            <li><a href="hayat.html" data-nav data-i18n="navLife">Hayatı</a></li>
+            <li><a href="sozler.html" data-nav class="active" data-i18n="navQuotes">Sözleri</a></li>
+            <li><a href="galeri.html" data-nav data-i18n="navGallery">Galeri</a></li>
+            <li><a href="kitaplar.html" data-nav data-i18n="navBooks">Kitaplar</a></li>
+            <li><a href="parti.html" data-nav data-i18n="navParty">Parti</a></li>
+          </ul>
+        </nav>
+        <div class="lang" id="lang">
+          <button id="lang-btn" aria-haspopup="listbox" aria-expanded="false" title="Dil">🌐</button>
+          <div class="lang-list" role="listbox" id="lang-list">
+            <button data-lang="tr" class="current">Türkçe</button>
+            <button data-lang="en">English</button>
+            <button data-lang="de">Deutsch</button>
+            <button data-lang="fr">Français</button>
+            <button data-lang="es">Español</button>
+            <button data-lang="ru">Русский</button>
+            <button data-lang="ar">العربية</button>
+            <button data-lang="fa">فارسی</button>
+            <button data-lang="az">Azərbaycan</button>
+            <button data-lang="zh">中文</button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero banner" style="background-image:url('photo/sözbanner.jpeg'); background-position:center; background-size:cover;">
+        <div class="container hero-inner">
+          <div class="hero-text">
+            <h1 data-i18n="quotesTitle">Atatürk'ün Sözleri</h1>
+            <p data-i18n="quotesSubtitle">İlham veren cümleler.</p>
+          </div>
+          <div class="hero-media" aria-hidden="true"></div>
+        </div>
+      </section>
+
+      <section class="quotes section" id="sozler-list">
+        <div class="container">
+          <h2>Atatürk'ün Sözleri</h2>
+          <div class="quotes-toolbar card" aria-label="Sözler araç çubuğu">
+            <div class="row">
+              <input id="quote-search" type="search" placeholder="Sözlerde ara..." aria-label="Sözlerde ara" />
+              <div class="toolbar-actions">
+                <button class="btn sm" id="quotes-shuffle" type="button" data-i18n="shuffle">Karıştır</button>
+                <button class="btn sm" id="quotes-clear" type="button" data-i18n="clear">Temizle</button>
+              </div>
+            </div>
+            <div class="chips" id="quotes-chips" role="listbox" aria-label="Kategoriler"></div>
+          </div>
+          <div class="grid four">
+            <h3 class="category">Cumhuriyet ve Özgürlük Üzerine</h3>
+            <figure class="card"><blockquote class="quote">“Benim naçiz vücudum elbet bir gün toprak olacaktır; fakat Türkiye Cumhuriyeti ilelebet payidar kalacaktır.”</blockquote></figure>
+            <figure class="card"><blockquote class="quote">“Egemenlik, kayıtsız şartsız milletindir.”</blockquote></figure>
+            <figure class="card"><blockquote class="quote">“Özgürlük ve bağımsızlık benim karakterimdir.”</blockquote></figure>
+
+            <h3 class="category">Eğitim, Gençlik ve Gelecek</h3>
+            <figure class="card"><blockquote class="quote">“Bütün ümidim gençliktedir.”</blockquote></figure>
+            <figure class="card"><blockquote class="quote">“Ey yükselen yeni nesil! İstikbal sizsiniz.”</blockquote></figure>
+            <figure class="card"><blockquote class="quote">“Hayatta en hakiki mürşit ilimdir.”</blockquote></figure>
+
+            <h3 class="category">Vatan, Millet ve Bağımsızlık</h3>
+            <figure class="card"><blockquote class="quote">“Söz konusu olan vatansa, gerisi teferruattır.”</blockquote></figure>
+            <figure class="card"><blockquote class="quote">“Yurtta sulh, cihanda sulh.”</blockquote></figure>
+            <figure class="card"><blockquote class="quote">“Türk milletinin karakteri yüksektir, Türk milleti çalışkandır, Türk milleti zekidir.”</blockquote></figure>
+
+            <h3 class="category">Akıl, Bilim ve Medeniyet</h3>
+            <figure class="card"><blockquote class="quote">“Akıl ve mantığın halledemeyeceği mesele yoktur.”</blockquote></figure>
+            <figure class="card"><blockquote class="quote">“Medeniyet yolunda yürümek ve başarılı olmak hayatın şartıdır.”</blockquote></figure>
+            <figure class="card"><blockquote class="quote">“Hayatta en büyük kılavuz bilimdir.”</blockquote></figure>
+
+            <h3 class="category">Sanat, Kültür ve Dil</h3>
+            <figure class="card"><blockquote class="quote">“Bir millet sanattan ve sanatkârdan mahrumsa, tam bir hayata malik olamaz.”</blockquote></figure>
+            <figure class="card"><blockquote class="quote">“Türk dili Türk milletinin kalbidir, zihnidir.”</blockquote></figure>
+            <figure class="card"><blockquote class="quote">“Millî kültürümüzü çağdaş uygarlık düzeyinin üstüne çıkaracağız.”</blockquote></figure>
+
+            <h3 class="category">Çalışmak ve Başarı</h3>
+            <figure class="card"><blockquote class="quote">“Vatanını en çok seven, görevini en iyi yapandır.”</blockquote></figure>
+            <figure class="card"><blockquote class="quote">“Dinlenmemek üzere yürümeye karar verenler asla ve asla yorulmazlar.”</blockquote></figure>
+            <figure class="card"><blockquote class="quote">“Zafer, ‘Zafer benimdir’ diyebilenindir.”</blockquote></figure>
+
+            <h3 class="category">Motivasyon ve Liderlik</h3>
+            <figure class="card"><blockquote class="quote">“Umutsuz durumlar yoktur, umutsuz insanlar vardır.”</blockquote></figure>
+            <figure class="card"><blockquote class="quote">“Beni görmek demek, yüzümü görmek değildir; fikirlerimi, duygularımı anlamaktır.”</blockquote></figure>
+            <figure class="card"><blockquote class="quote">“Ne mutlu Türküm diyene!”</blockquote></figure>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div id="footer-flags" class="section" style="padding-top:12px; padding-bottom:16px;"></div>
+        <p>© <span id="year"></span> <span data-i18n="footerSite">Atatürk Anma Sitesi</span></p>
+        <p class="credit" data-i18n="footerDesigned">Yiğit KURT tarafından tasarlandı</p>
+      </div>
+    </footer>
+
+    <script src="main.js" defer></script>
+    <script>
+      // Tüm alıntı kartlarına kopyalama butonu ekle
+      (function ensureCopyButtons(){
+        const cards = document.querySelectorAll('#sozler-list .card');
+        cards.forEach((card) => {
+          // Eğer zaten buton eklendiyse tekrar ekleme
+          if (card.querySelector('[data-copy]')) return;
+          const quoteEl = card.querySelector('.quote');
+          if (!quoteEl) return;
+            const tools = document.createElement('div');
+          tools.className = 'tools';
+            const copyBtn = document.createElement('button');
+            copyBtn.className = 'btn sm';
+            copyBtn.type = 'button';
+          copyBtn.setAttribute('data-copy','');
+          copyBtn.setAttribute('data-i18n','copy');
+          copyBtn.textContent = (window.getI18n && window.getI18n('copy')) || 'Kopyala';
+            copyBtn.addEventListener('click', async () => {
+              try {
+              await navigator.clipboard.writeText(quoteEl.textContent.replace(/^\s+|\s+$/g,'') + ' — Mustafa Kemal Atatürk');
+              const prev = copyBtn.textContent; copyBtn.textContent = (window.getI18n && window.getI18n('copied')) || 'Kopyalandı'; setTimeout(() => copyBtn.textContent = prev, 1200);
+              } catch (e) {
+                alert('Kopyalama başarısız oldu.');
+              }
+            });
+            tools.appendChild(copyBtn);
+
+            // Paylaş düğmesi (Web Share API destekliyse)
+            const shareBtn = document.createElement('button');
+            shareBtn.className = 'btn sm';
+            shareBtn.type = 'button';
+            shareBtn.setAttribute('data-share','');
+            shareBtn.textContent = (window.getI18n && window.getI18n('share')) || 'Paylaş';
+            shareBtn.addEventListener('click', async () => {
+              const text = quoteEl.textContent.replace(/^\s+|\s+$/g,'') + ' — Mustafa Kemal Atatürk';
+              if (navigator.share) {
+                try { await navigator.share({ text }); } catch (_) {}
+              } else {
+                try { await navigator.clipboard.writeText(text); const prev = shareBtn.textContent; shareBtn.textContent = (window.getI18n && window.getI18n('copied')) || 'Kopyalandı'; setTimeout(() => shareBtn.textContent = prev, 1200);} catch(_) { alert('Paylaşım desteklenmiyor. Metin panoya kopyalandı.'); }
+              }
+            });
+            tools.appendChild(shareBtn);
+          card.appendChild(tools);
+        });
+      })();
+
+      // Sözler: kategori, arama, karıştırma
+      (function quotesEnhance(){
+        const root = document.getElementById('sozler-list');
+        if (!root) return;
+        const grid = root.querySelector('.grid');
+        if (!grid) return;
+
+        // Kartlara ait kategori belirle (öncesindeki h3.category başlığına bak)
+        const children = Array.from(grid.children);
+        let currentCategory = '';
+        children.forEach((el) => {
+          if (el.matches('.category')) {
+            currentCategory = el.textContent.trim();
+          } else if (el.matches('.card')) {
+            el.setAttribute('data-category', currentCategory);
+          }
+        });
+
+        // Chip'leri üret
+        const chipWrap = document.getElementById('quotes-chips');
+        const categories = Array.from(new Set(Array.from(grid.querySelectorAll('.card')).map(c => c.getAttribute('data-category')).filter(Boolean)));
+        const allChip = document.createElement('button');
+        allChip.type = 'button'; allChip.className = 'chip active'; allChip.textContent = (window.getI18n && window.getI18n('all')) || 'Tümü'; allChip.setAttribute('data-cat','*');
+        if (chipWrap) chipWrap.appendChild(allChip);
+        categories.forEach(cat => {
+          const b = document.createElement('button'); b.type = 'button'; b.className = 'chip'; b.textContent = cat; b.setAttribute('data-cat', cat);
+          chipWrap && chipWrap.appendChild(b);
+        });
+
+        // Etkileşimler
+        const search = document.getElementById('quote-search');
+        const shuffleBtn = document.getElementById('quotes-shuffle');
+        const clearBtn = document.getElementById('quotes-clear');
+        let activeCat = '*';
+
+        function applyFilters(){
+          const q = (search && search.value || '').toLowerCase().trim();
+          let anyVisibleInSection = false;
+          // Önce tüm kartları filtrele
+          const cards = Array.from(grid.querySelectorAll('.card'));
+          cards.forEach(card => {
+            const text = (card.querySelector('.quote')?.textContent || '').toLowerCase();
+            const cat = card.getAttribute('data-category') || '';
+            const matchCat = activeCat === '*' || cat === activeCat;
+            const matchText = !q || text.includes(q);
+            const show = matchCat && matchText;
+            card.style.display = show ? '' : 'none';
+          });
+          // Başlıkları yalnızca altında görünen kart varsa göster
+          const headings = Array.from(grid.querySelectorAll('.category'));
+          headings.forEach(h => {
+            const cat = h.textContent.trim();
+            const visible = Array.from(grid.querySelectorAll(`.card[data-category="${CSS.escape(cat)}"]`)).some(c => c.style.display !== 'none');
+            h.style.display = visible ? '' : 'none';
+            if (visible) anyVisibleInSection = true;
+          });
+          // Eğer hiçbir şey görünmüyorsa küçük bir durum mesajı göster
+          let empty = root.querySelector('[data-empty]');
+          if (!anyVisibleInSection) {
+            if (!empty) {
+              empty = document.createElement('p');
+              empty.setAttribute('data-empty','');
+              empty.style.margin = '8px 0 0';
+              empty.style.color = 'var(--muted)';
+              empty.textContent = (window.getI18n && window.getI18n('noResults')) || 'Sonuç bulunamadı.';
+              root.querySelector('.container')?.appendChild(empty);
+            }
+          } else if (empty) { empty.remove(); }
+        }
+
+        chipWrap?.addEventListener('click', (e) => {
+          const btn = e.target.closest('.chip'); if (!btn) return;
+          activeCat = btn.getAttribute('data-cat') || '*';
+          Array.from(chipWrap.querySelectorAll('.chip')).forEach(c => c.classList.toggle('active', c === btn));
+          applyFilters();
+        });
+
+        search?.addEventListener('input', () => applyFilters());
+        clearBtn?.addEventListener('click', () => { if (search) search.value=''; activeCat='*';
+          Array.from(chipWrap?.querySelectorAll('.chip') || []).forEach((c,i)=> c.classList.toggle('active', i===0));
+          applyFilters();
+        });
+
+        // Karıştır: sadece kartların DOM sırasını karıştırır, başlıklar yerinde kalır
+        shuffleBtn?.addEventListener('click', () => {
+          const groups = categories.length ? categories : [''];
+          groups.forEach(cat => {
+            const cards = Array.from(grid.querySelectorAll(cat ? `.card[data-category="${CSS.escape(cat)}"]` : '.card'));
+            // Fisher-Yates
+            for (let i = cards.length - 1; i > 0; i--) {
+              const j = Math.floor(Math.random() * (i + 1));
+              [cards[i], cards[j]] = [cards[j], cards[i]];
+            }
+            // Yeniden ekle (başlıkların hemen sonrasına göre)
+            let anchor = cat ? Array.from(grid.querySelectorAll('.category')).find(h => h.textContent.trim() === cat) : null;
+            const refNode = anchor ? anchor.nextSibling : grid.firstChild;
+            cards.forEach(card => grid.insertBefore(card, refNode));
+          });
+          applyFilters();
+        });
+
+        // İlk yüklemede uygula
+        applyFilters();
+      })();
+    </script>
+  </body>
+  </html>
+
+

@@ -1,0 +1,299 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Kitaplar</title>
+    <meta name="description" content="Atatürk ve dönemi hakkında kitaplar ve kaynaklar." />
+    
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="logo" href="index.html" aria-label="Anasayfa">Atatürk</a>
+        <button class="nav-toggle" aria-expanded="false" aria-label="Menüyü aç/kapat">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+        <nav class="site-nav" aria-label="Ana menü">
+          <ul>
+            <li><a href="index.html" data-nav data-i18n="navHome">Anasayfa</a></li>
+            <li><a href="hayat.html" data-nav data-i18n="navLife">Hayatı</a></li>
+            <li><a href="sozler.html" data-nav data-i18n="navQuotes">Sözleri</a></li>
+            <li><a href="galeri.html" data-nav data-i18n="navGallery">Galeri</a></li>
+            <li><a href="kitaplar.html" data-nav class="active" data-i18n="navBooks">Kitaplar</a></li>
+            <li><a href="parti.html" data-nav data-i18n="navParty">Parti</a></li>
+          </ul>
+        </nav>
+        <div class="lang" id="lang">
+          <button id="lang-btn" aria-haspopup="listbox" aria-expanded="false" title="Dil">🌐</button>
+          <div class="lang-list" role="listbox" id="lang-list">
+            <button data-lang="tr" class="current">Türkçe</button>
+            <button data-lang="en">English</button>
+            <button data-lang="de">Deutsch</button>
+            <button data-lang="fr">Français</button>
+            <button data-lang="es">Español</button>
+            <button data-lang="ru">Русский</button>
+            <button data-lang="ar">العربية</button>
+            <button data-lang="fa">فارسی</button>
+            <button data-lang="az">Azərbaycan</button>
+            <button data-lang="zh">中文</button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero banner" style="background-image:url('photo/galeribanner.jpeg'); background-position:center; background-size:cover;">
+        <div class="container hero-inner">
+          <div class="hero-text">
+            <h1 data-i18n="booksTitle">Kitaplar</h1>
+            <p data-i18n="booksSubtitle">Atatürk ve dönemi hakkında temel kaynaklar.</p>
+          </div>
+          <div class="hero-media" aria-hidden="true"></div>
+        </div>
+      </section>
+
+      <section class="section reveal">
+        <div class="container">
+          <h2 data-i18n="booksList">Önerilen Kitaplar</h2>
+          <div class="grid two">
+            <div class="card">
+              <h3>Nutuk (Söylev) — Mustafa Kemal Atatürk</h3>
+              <p data-i18n="bookNutuk">1919-1927 dönemini birinci ağızdan anlatan temel eser.</p>
+            </div>
+            <div class="card">
+              <h3>Atatürk — Lord Kinross</h3>
+              <p data-i18n="bookKinross">Batı kaynaklı klasik biyografi, geniş başvuru.</p>
+            </div>
+            <div class="card">
+              <h3>Türk İnkılap Tarihi — Sina Akşin</h3>
+              <p data-i18n="bookAksin">Cumhuriyet’in kuruluş sürecini analitik anlatım.</p>
+            </div>
+            <div class="card">
+              <h3>Bir Cumhuriyet Öyküsü — Sina Akşin</h3>
+              <p data-i18n="bookCumhuriyet">Erken Cumhuriyet yıllarını anlaşılır bir dille sunar.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section alt reveal">
+        <div class="container">
+          <h2>📗 1. Tarih ve Uygarlık Üzerine Önerdiği Kitaplar</h2>
+          <div class="card">
+            <div class="table-wrap">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th>Kitap Adı</th>
+                    <th>Yazar</th>
+                    <th>Not</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>İslam Tarihi</td>
+                    <td>Lammens</td>
+                    <td>İslam’ın ilk dönemlerini tarafsız gözle anlatıyor.</td>
+                  </tr>
+                  <tr>
+                    <td>Türklerin Tarihi</td>
+                    <td>Léon Cahun</td>
+                    <td>Atatürk’ün Türk Tarih Tezi’ni etkileyen eserlerden biridir.</td>
+                  </tr>
+                  <tr>
+                    <td>Les Origines de la Civilisation (Uygarlığın Kökeni)</td>
+                    <td>G. Elliot Smith</td>
+                    <td>Uygarlığın insan topluluklarında nasıl geliştiğini anlatır.</td>
+                  </tr>
+                  <tr>
+                    <td>Eski Şark Tarihi</td>
+                    <td>Eduard Meyer</td>
+                    <td>Mezopotamya ve Eski Mısır uygarlıkları hakkında.</td>
+                  </tr>
+                  <tr>
+                    <td>Napoléon’un Hatıraları</td>
+                    <td>Las Cases</td>
+                    <td>Napoléon’un siyasi ve askeri stratejilerini inceler. Atatürk bu kitabı defalarca okumuştur.</td>
+                  </tr>
+                  <tr>
+                    <td>Julius Caesar</td>
+                    <td>William Shakespeare</td>
+                    <td>Liderlik ve karar verme konularında esin kaynağı olmuştur.</td>
+                  </tr>
+                  <tr>
+                    <td>Kamus-ül Alam (Dünyalar Ansiklopedisi)</td>
+                    <td>Şemseddin Sami</td>
+                    <td>Türk-İslam coğrafyasına ait geniş bilgi kaynağı.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <p style="margin-top:10px; color: var(--muted);">Atatürk’ün kişisel kütüphanesindeki birçok kitap bugün Çankaya Köşkü, Anıtkabir ve DTCF kütüphanelerinde korunmaktadır; bir kısmında kendi el yazısıyla notlar bulunur.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section reveal">
+        <div class="container">
+          <h2>📘 2. Felsefe ve Siyaset Düşüncesi</h2>
+          <div class="card">
+            <div class="table-wrap">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th>Kitap Adı</th>
+                    <th>Yazar</th>
+                    <th>Atatürk’ün Yorumu</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr><td><strong>Descartes – Metot Üzerine Konuşma</strong></td><td>René Descartes</td><td>“Düşünmek, insanın en güçlü silahıdır.” vurgusunu önemserdi.</td></tr>
+                  <tr><td><strong>Pozitif Felsefe Dersleri</strong></td><td>Auguste Comte</td><td>“Bilim ve akıl rehberdir” anlayışını besleyen kaynaklarındandır.</td></tr>
+                  <tr><td><strong>Felsefi Sözlük</strong></td><td>Voltaire</td><td>Düşünce özgürlüğü ve dogmalara eleştiriler ilgisini çekerdi.</td></tr>
+                  <tr><td><strong>Kanunların Ruhu Üzerine</strong></td><td>Montesquieu</td><td>Cumhuriyet ve kuvvetler ayrılığı fikrine temel olmuştur.</td></tr>
+                  <tr><td><strong>Toplum Sözleşmesi</strong></td><td>Jean-Jacques Rousseau</td><td>Halk egemenliği düşüncesiyle örtüşür.</td></tr>
+                  <tr><td><strong>Devlet</strong></td><td>Platon</td><td>Devlet yönetimi ve adalet kavramları açısından önem verdi.</td></tr>
+                  <tr><td><strong>Politika</strong></td><td>Aristoteles</td><td>Bilimsel yönetim anlayışına katkı sağladı.</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section alt reveal">
+        <div class="container">
+          <h2>📕 3. Askerî Strateji ve Savaş Sanatı</h2>
+          <div class="card">
+            <div class="table-wrap">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th>Kitap Adı</th>
+                    <th>Yazar</th>
+                    <th>Açıklama</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr><td><strong>On War (Savaş Üzerine)</strong></td><td>Carl von Clausewitz</td><td>Askerî stratejisini derinden etkilemiştir.</td></tr>
+                  <tr><td><strong>Napoléon’un Taktikleri</strong></td><td>Jomini</td><td>Harp Akademisi yıllarında defalarca okumuştur.</td></tr>
+                  <tr><td><strong>Savaş Sanatı</strong></td><td>Sun Tzu</td><td>“En büyük zafer savaşmadan kazanılandır” anlayışı.</td></tr>
+                  <tr><td><strong>Tarih-i Sefer-i Hümayun-ı Selim Han</strong></td><td>Celalzade Mustafa Çelebi</td><td>Osmanlı sefer stratejileri.</td></tr>
+                  <tr><td><strong>Sefer ve Kumanda Sanatı</strong></td><td>Von der Goltz Paşa</td><td>Osmanlı ordusunda ders kitabı olarak okutuldu.</td></tr>
+                  <tr><td><strong>Büyük İskender’in Seferleri</strong></td><td>Arrianos</td><td>Liderlik kararlılığı açısından dikkatini çekmiştir.</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section reveal">
+        <div class="container">
+          <h2>📙 4. Bilim ve Düşünce</h2>
+          <div class="card">
+            <div class="table-wrap">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th>Kitap Adı</th>
+                    <th>Yazar</th>
+                    <th>Atatürk’ün Görüşü</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr><td><strong>Türlerin Kökeni</strong></td><td>Charles Darwin</td><td>Bilimsel düşünce ve evrim kavramına ilgisi büyüktü.</td></tr>
+                  <tr><td><strong>Kozmos</strong></td><td>Alexander von Humboldt</td><td>Doğa ve evrenin bilimsel düzenine hayranlık duydu.</td></tr>
+                  <tr><td><strong>Bilim Nedir, Ne Değildir?</strong></td><td>Henri Poincaré</td><td>Bilimin yöntemsel düşünceye dayandığını savunur.</td></tr>
+                  <tr><td><strong>La Science et la Vie (Bilim ve Hayat)</strong></td><td>Jean Perrin</td><td>Pozitif bilimleri halkın anlayacağı şekilde anlatır.</td></tr>
+                  <tr><td><strong>Medeni Bilgiler</strong></td><td>Afet İnan (Atatürk’ün dikte ettiği)</td><td>Vatandaşlık bilgileri, doğrudan Atatürk’ün fikirlerinden oluşur.</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section alt reveal">
+        <div class="container">
+          <h2>📔 5. Türkçe Eserler ve Edebiyat</h2>
+          <div class="card">
+            <div class="table-wrap">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th>Kitap Adı</th>
+                    <th>Yazar</th>
+                    <th>Açıklama</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr><td><strong>Nutuk</strong></td><td>Mustafa Kemal Atatürk</td><td>En çok okunmasını istediği mirası.</td></tr>
+                  <tr><td><strong>Çalıkuşu</strong></td><td>Reşat Nuri Güntekin</td><td>Türk kadınının eğitimdeki rolüne dikkat çektiği için önerir.</td></tr>
+                  <tr><td><strong>Mai ve Siyah</strong></td><td>Halit Ziya Uşaklıgil</td><td>Batılılaşma sürecini anlatan önemli bir roman.</td></tr>
+                  <tr><td><strong>Kutadgu Bilig</strong></td><td>Yusuf Has Hacib</td><td>Türk ahlak felsefesinin temel eserlerinden.</td></tr>
+                  <tr><td><strong>Nutuk-ı Hamidiye</strong></td><td>Namık Kemal</td><td>Hürriyet, vatan ve millet kavramlarına hayranlık.</td></tr>
+                  <tr><td><strong>Vatan Yahut Silistre</strong></td><td>Namık Kemal</td><td>Gençlik döneminde etkisinde kalmıştır.</td></tr>
+                  <tr><td><strong>Divan-ı Lügat-it Türk</strong></td><td>Kaşgarlı Mahmut</td><td>Türk dili çalışmalarında referans.</td></tr>
+                  <tr><td><strong>Safahat</strong></td><td>Mehmet Akif Ersoy</td><td>Dönemin ruhunu yansıttığı için takdir etmiştir.</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <h3 style="margin-top:16px;">6. Atatürk’ün Özellikle Tavsiye Ettiği Türkçe Eserler</h3>
+          <div class="card">
+            <ul>
+              <li>Nutuk — Mustafa Kemal Atatürk</li>
+              <li>Çalıkuşu — Reşat Nuri Güntekin</li>
+              <li>Kutadgu Bilig — Yusuf Has Hacib</li>
+              <li>Safahat — Mehmet Akif Ersoy</li>
+              <li>Vatan Yahut Silistre — Namık Kemal</li>
+              <li>Türk Tarihinin Ana Hatları — Afet İnan ve TTK</li>
+              <li>Gençlerle Başbaşa — Ali Fuat Cebesoy</li>
+              <li>Türk Dili İçin — (Atatürk’ün önerisiyle)</li>
+              <li>Medeni Bilgiler — (Atatürk’ün dikte ettiği)</li>
+              <li>Zabit ve Kumandan ile Hasbihal — Mustafa Kemal</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="section reveal">
+        <div class="container">
+          <h2>🧠 Atatürk’ün Okuma Anlayışı</h2>
+          <div class="card">
+            <ul>
+              <li>Altını çizer, kenara notlar alırdı.</li>
+              <li>Anlamadığı kavramları araştırır, Fransızca/Almanca/Osmanlıca karşılıklarını düşerdi.</li>
+              <li>Bilim, tarih, felsefe, eğitim ve strateji konularında derinlemesine çalışırdı.</li>
+              <li>Çankaya’da bile her gece 2–3 saat okur, sabah notlar alırdı.</li>
+            </ul>
+          </div>
+
+          <h3 style="margin-top:16px;">💬 Atatürk’ün Kitaplara Dair Sözleri</h3>
+          <div class="grid two">
+            <figure class="card"><blockquote class="quote">“Kitapsız yaşamak, kör, sağır, dilsiz yaşamaktır.”</blockquote></figure>
+            <figure class="card"><blockquote class="quote">“Hayatta en hakiki mürşit ilimdir, fendir.”</blockquote></figure>
+            <figure class="card"><blockquote class="quote">“Okumak; insanı fikren ve ruhen yükseltir.”</blockquote></figure>
+            <figure class="card"><blockquote class="quote">“Bir millet, kitap okumazsa, düşünemez.”</blockquote></figure>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div id="footer-flags" class="section" style="padding-top:12px; padding-bottom:16px;"></div>
+        <p>© <span id="year"></span> <span data-i18n="footerSite">Atatürk Anma Sitesi</span></p>
+        <p class="credit" data-i18n="footerDesigned">Yiğit KURT tarafından tasarlandı</p>
+      </div>
+    </footer>
+
+    <script src="main.js" defer></script>
+  </body>
+  </html>

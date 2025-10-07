@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Galeri</title>
+    <meta name="description" content="Atatürk ile ilgili fotoğraflar ve indirilebilir görseller." />
+    
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="logo" href="index.html" aria-label="Anasayfa">Atatürk</a>
+        <button class="nav-toggle" aria-expanded="false" aria-label="Menüyü aç/kapat">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+        <nav class="site-nav" aria-label="Ana menü">
+          <ul>
+            <li><a href="index.html" data-nav data-i18n="navHome">Anasayfa</a></li>
+            <li><a href="hayat.html" data-nav data-i18n="navLife">Hayatı</a></li>
+            <li><a href="sozler.html" data-nav data-i18n="navQuotes">Sözleri</a></li>
+            <li><a href="galeri.html" data-nav class="active" data-i18n="navGallery">Galeri</a></li>
+            <li><a href="kitaplar.html" data-nav data-i18n="navBooks">Kitaplar</a></li>
+            <li><a href="parti.html" data-nav data-i18n="navParty">Parti</a></li>
+          </ul>
+        </nav>
+        <div class="lang" id="lang">
+          <button id="lang-btn" aria-haspopup="listbox" aria-expanded="false" title="Dil">🌐</button>
+          <div class="lang-list" role="listbox" id="lang-list">
+            <button data-lang="tr" class="current">Türkçe</button>
+            <button data-lang="en">English</button>
+            <button data-lang="de">Deutsch</button>
+            <button data-lang="fr">Français</button>
+            <button data-lang="es">Español</button>
+            <button data-lang="ru">Русский</button>
+            <button data-lang="ar">العربية</button>
+            <button data-lang="fa">فارسی</button>
+            <button data-lang="az">Azərbaycan</button>
+            <button data-lang="zh">中文</button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero banner gallery-head" style="background-image:url('photo/galeribanner.jpeg'); background-position:center;">
+        <div class="container hero-inner">
+          <div class="hero-text">
+            <h1 data-i18n="galleryTitle">Galeri</h1>
+            <p data-i18n="gallerySubtitle">Atatürk indirilebilir fotoğraflar</p>
+          </div>
+          <div class="hero-media" aria-hidden="true"></div>
+        </div>
+      </section>
+
+      <section class="section reveal">
+        <div class="container">
+          <div class="gallery">
+            <div class="gcard image">
+              <img src="photo/pp.jpeg" alt="Mustafa Kemal Atatürk" />
+              <div class="overlay">
+                <a class="btn sm" download href="photo/pp.jpeg" data-i18n="download">İndir</a>
+              </div>
+            </div>
+            <div class="gcard image">
+              <img src="photo/banner.jpg" alt="Atatürk Banner" />
+              <div class="overlay">
+                <a class="btn sm" download href="photo/banner.jpg" data-i18n="download">İndir</a>
+              </div>
+            </div>
+            <div class="gcard image">
+              <img src="photo/sözbanner.jpeg" alt="Sözler Banner" />
+              <div class="overlay">
+                <a class="btn sm" download href="photo/sözbanner.jpeg" data-i18n="download">İndir</a>
+              </div>
+            </div>
+            <div class="gcard image">
+              <img src="photo/hayatbasbanner.jpeg" alt="Hayat Baş Banner" />
+              <div class="overlay">
+                <a class="btn sm" download href="photo/hayatbasbanner.jpeg" data-i18n="download">İndir</a>
+              </div>
+            </div>
+            <div class="gcard image">
+              <img src="photo/hayatsonbanner.jpeg" alt="Hayat Son Banner" />
+              <div class="overlay">
+                <a class="btn sm" download href="photo/hayatsonbanner.jpeg" data-i18n="download">İndir</a>
+              </div>
+            </div>
+            <div class="gcard image">
+              <img src="photo/ataturkanne.jpg" alt="Zübeyde Hanım" />
+              <div class="overlay">
+                <a class="btn sm" download href="photo/ataturkanne.jpg" data-i18n="download">İndir</a>
+              </div>
+            </div>
+            <div class="gcard image">
+              <img src="photo/ataturkbabaü.jpg" alt="Ali Rıza Efendi" />
+              <div class="overlay">
+                <a class="btn sm" download href="photo/ataturkbabaü.jpg" data-i18n="download">İndir</a>
+              </div>
+            </div>
+            <div class="gcard image">
+              <img src="photo/Atatürk(1).jpeg" alt="Mustafa Kemal Atatürk" />
+              <div class="overlay">
+                <a class="btn sm" download href="photo/Atatürk(1).jpeg" data-i18n="download">İndir</a>
+              </div>
+            </div>
+            <div class="gcard image">
+              <img src="photo/MJq0cejw.jpeg" alt="Atatürk fotoğrafı" />
+              <div class="overlay">
+                <a class="btn sm" download href="photo/MJq0cejw.jpeg" data-i18n="download">İndir</a>
+              </div>
+            </div>
+            <div class="gcard image">
+              <img src="photo/1s1k8mhT.jpeg" alt="Atatürk fotoğrafı" />
+              <div class="overlay">
+                <a class="btn sm" download href="photo/1s1k8mhT.jpeg" data-i18n="download">İndir</a>
+              </div>
+            </div>
+            <div class="gcard image">
+              <img src="photo/SDOSuWOP.jpeg" alt="Atatürk fotoğrafı" />
+              <div class="overlay">
+                <a class="btn sm" download href="photo/SDOSuWOP.jpeg" data-i18n="download">İndir</a>
+              </div>
+            </div>
+            <div class="gcard image">
+              <img src="photo/b1w4bWxf.jpeg" alt="Atatürk fotoğrafı" />
+              <div class="overlay">
+                <a class="btn sm" download href="photo/b1w4bWxf.jpeg" data-i18n="download">İndir</a>
+              </div>
+            </div>
+            <div class="gcard image">
+              <img src="photo/Ne Mutlu Türküm Diyene.jpeg" alt="Ne Mutlu Türküm Diyene" />
+              <div class="overlay">
+                <a class="btn sm" download href="photo/Ne Mutlu Türküm Diyene.jpeg" data-i18n="download">İndir</a>
+              </div>
+            </div>
+            <div class="gcard image">
+              <img src="photo/MUSTAFA KEMAL ATATÜRK 🇹🇷.jpeg" alt="Mustafa Kemal Atatürk" />
+              <div class="overlay">
+                <a class="btn sm" download href="photo/MUSTAFA KEMAL ATATÜRK 🇹🇷.jpeg" data-i18n="download">İndir</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div id="footer-flags" class="section" style="padding-top:12px; padding-bottom:16px;"></div>
+        <p>© <span id="year"></span> <span data-i18n="footerSite">Atatürk Anma Sitesi</span></p>
+        <p class="credit" data-i18n="footerDesigned">Yiğit KURT tarafından tasarlandı</p>
+      </div>
+    </footer>
+
+    <script src="main.js" defer></script>
+  </body>
+  </html>
