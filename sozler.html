@@ -58,10 +58,21 @@
 
       <section class="quotes section" id="sozler-list">
         <div class="container">
-          <h2>Atatürk'ün Sözleri</h2>
+            <div class="quotes-header">
+            <h2>Atatürk'ün Sözleri</h2>
+            <p class="quotes-description" data-i18n="quotesSubtitle">İlham veren cümleler.</p>
+          </div>
           <div class="quotes-toolbar card" aria-label="Sözler araç çubuğu">
             <div class="row">
-              <input id="quote-search" type="search" placeholder="Sözlerde ara..." aria-label="Sözlerde ara" />
+              <div class="search-container">
+                <input id="quote-search" type="search" placeholder="Sözlerde ara..." aria-label="Sözlerde ara" />
+                <span class="search-icon" aria-hidden="true">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="2"/>
+                    <line x1="20" y1="20" x2="16.65" y2="16.65" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                  </svg>
+                </span>
+              </div>
               <div class="toolbar-actions">
                 <button class="btn sm" id="quotes-shuffle" type="button" data-i18n="shuffle">Karıştır</button>
                 <button class="btn sm" id="quotes-clear" type="button" data-i18n="clear">Temizle</button>
@@ -69,7 +80,7 @@
             </div>
             <div class="chips" id="quotes-chips" role="listbox" aria-label="Kategoriler"></div>
           </div>
-          <div class="grid four">
+          <div class="quotes-grid grid">
             <h3 class="category">Cumhuriyet ve Özgürlük Üzerine</h3>
             <figure class="card"><blockquote class="quote">“Benim naçiz vücudum elbet bir gün toprak olacaktır; fakat Türkiye Cumhuriyeti ilelebet payidar kalacaktır.”</blockquote></figure>
             <figure class="card"><blockquote class="quote">“Egemenlik, kayıtsız şartsız milletindir.”</blockquote></figure>
